@@ -1,5 +1,4 @@
 import React from 'react';
-import { gsap } from 'gsap';
 import { Link } from 'gatsby-plugin-react-i18next';
 import Logo from '../../../svg/logo.svg';
 import HeaderLanguage from './HeaderLanguage/HeaderLanguage';
@@ -8,18 +7,9 @@ import Burger from './Burger/Burger';
 import HeaderOrder from './HeaderOrder/HeaderOrder';
 
 const Header = () => {
-  let headerEl = React.useRef(null);
-  React.useEffect(() => {
-    gsap.to(headerEl, {
-      y: 0,
-      opacity: 1,
-      duration: 0.8,
-      delay: 6,
-    });
-  }, []);
 
   return (
-    <div className="page-wrapper" ref={(e) => (headerEl = e)}>
+    <div className="page-wrapper">
       <header className="header">
         <div className="header__container">
           <div className="header__logo">

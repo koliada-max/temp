@@ -1,0 +1,37 @@
+@import './AboutText/AboutText'
+
+.about
+  width: 100%
+  border: 1px solid $border
+  &__container
+    display: flex
+    flex-direction: row
+  &__img-wrapper
+    border-right: 1px solid $border
+    flex-basis: 50%
+    width: 100%
+    height: 100%
+    padding: 40px
+    position: relative
+  &__image-text_title
+    font-family: $main
+    font-size: 3.125em
+    color: $white
+    font-style: normal
+    font-weight: 600
+    text-align: center
+    text-transform: uppercase
+  &__image-text_description
+    font-family: $main
+    font-size: 0.875em
+    color: $white
+    font-style: normal
+    font-weight: normal
+    text-align: center
+    text-transform: uppercase
+  &__image-text
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    

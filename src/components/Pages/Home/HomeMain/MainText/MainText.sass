@@ -1,0 +1,61 @@
+.text-section
+  &__count-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__count-data
+    display: inline-block
+    font-family: $main
+    font-style: normal
+    font-weight: 600
+    font-size: 1.75em
+    text-transform: uppercase
+    color: $black
+    @include media-breakpoint-down(lg)
+      display: none
+  &__count-text
+    display: inline-block
+    font-family: $main
+    font-style: normal
+    font-weight: 600
+    font-size: 0.625em
+    text-transform: uppercase
+    color: $black
+    @include media-breakpoint-down(lg)
+      display: none
+  &__description-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &_descr
+      padding-top: 97px
+    &_title
+      padding-top: 34px
+      @include media-breakpoint-down(lg)
+        padding-top: 33px
+  &__description
+    white-space: pre-line
+    font-family: $text
+    font-style: normal
+    font-weight: 400
+    font-size: 0.9375em
+    color: $dark-gray
+    @include media-breakpoint-down(lg)
+      display: inline-block
+      text-align: center
+  &__title
+    white-space: pre-line
+    font-family: $main
+    font-style: normal
+    font-weight: 400
+    font-size: 3.4375em
+    color: $black
+    @include media-breakpoint-down(lg)
+      display: inline-block
+      text-align: center
+
+.home-main__text-section
+  display: flex
+  flex-direction: column
+  @include media-breakpoint-down(lg)
+    z-index: 1
