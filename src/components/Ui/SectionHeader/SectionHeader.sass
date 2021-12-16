@@ -1,0 +1,40 @@
+.section-header
+  width: 100%
+  display: flex
+  align-items: flex-start
+  padding: 160px 0 80px 0
+
+
+.header__count-wrapper
+  display: none
+  @include media-breakpoint-down(md)
+    display: flex
+
+.section-header__wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  @include media-breakpoint-down(md)
+    flex-direction: column
+
+.header__description
+  flex-basis: 50%
+  @include media-breakpoint-down(md)
+    width: 100%
+
+.header__description-count
+  padding-right: 3%
+  @include media-breakpoint-down(md)
+    display: none
+
+.header__title
+  flex-basis: 50%
+  font-size: 1.875em
+  letter-spacing: -0.01em
+  text-transform: uppercase
+  font-weight: 400
+  @include media-breakpoint-down(xxl)
+    font-size: 2vw
+    line-height: 1.2
+  @include media-breakpoint-down(md)
+    width: 100%

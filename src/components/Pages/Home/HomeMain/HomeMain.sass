@@ -1,0 +1,49 @@
+@import './MainText/MainText'
+    
+.home-main
+  padding-top: 200px
+  height: 100vh
+  &__container
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: space-between
+    @include media-breakpoint-down(lg)
+      flex-direction: column
+  
+.page-wrapper__main
+  padding: 0 4% 0 6%
+  @include media-breakpoint-down(xl)
+    padding: 0 0 0 5%
+  @include media-breakpoint-down(lg)
+    padding: 0
+.image
+  width: 100%
+  height: 100%
+
+.image-section__wrapper
+  width: 567px
+  height: 567px
+  z-index: -1
+  @include media-breakpoint-down(xl)
+    width: 478px
+    height: 478px
+    position: absolute
+    right: 0.25%
+    bottom: 2%
+  @include media-breakpoint-down(lg)
+    width: 409px
+    height: 475px
+    position: absolute
+    right: 23%
+    top: 10%
+  @include media-breakpoint-down(md)
+    width: 383px
+    height: 383px
+    position: absolute
+    right: 23%
+    top: 17.7%
+  @include media-breakpoint-down(sm)
+    width: 279px
+    height: 279px
+    
