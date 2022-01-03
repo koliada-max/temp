@@ -1,0 +1,21 @@
+@import './FooterBottom/FooterBottom'
+@import './FooterLeft/FooterLeft'
+@import './FooterCenter/FooterCenter'
+@import './FooterRight/FooterRight'
+
+
+.footer
+  max-width: $page-width
+  padding-top: 160px
+  margin: 0 auto
+  @media screen and ( max-width: $page-width )
+    padding-top: calc( 60px + (160 - 60) * ((100vw - 320px) / (1440 - 320))) 
+  @include media-breakpoint-down(md)
+    padding-top: 40px
+
+
+.footer-main
+  width: 100%
+  display: flex
+  @include media-breakpoint-down(lg)
+    flex-direction: column

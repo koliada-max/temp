@@ -1,0 +1,43 @@
+@import './VideoModal/VideoModal'
+
+.homeVideo
+  max-width: $page-width
+  padding-top: 160px
+  margin: 0 auto
+  @media screen and ( max-width: $page-width )
+    padding-top: calc( 60px + (160 - 60) * ((100vw - 320px) / (1440 - 320)))
+  &__button-container
+    @include absolute-center()
+  &__wrapper
+    position: relative
+
+.play-container
+  position: relative
+  width: 120px
+  height: 99px
+  background: rgba(234, 233, 233, 0.2)
+  border: 1px solid rgba(255, 255, 255, 0.3)
+  @media screen and ( max-width: $page-width )
+    width: calc( 49px + (120 - 49) * ((100vw - 320px) / (1440 - 320)))
+    height: calc(36px + (99 - 36) * ((100vw - 320px) / (1440 - 320)))
+
+.homeVideo__image
+  width: 100%
+  height: 100%
+
+.homeVideo__image-container
+  padding: 0 6%
+
+.play-icon
+  @include absolute-center()
+  svg
+    width: 14px
+    height: 18px
+    @media screen and ( max-width: $page-width )
+      width: calc( 9.33px + (14 - 9.33) * ((100vw - 320px) / (1440 - 320)))
+      height: calc( 12px + (18 - 12) * ((100vw - 320px) / (1440 - 320)))
+
+.button-video
+  transition: transform 200ms ease-in-out
+  &:hover
+    transform: scale(1.03)

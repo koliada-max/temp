@@ -1,0 +1,8 @@
+@import './PatnersSlider/PartnerSlider'
+
+.homePartners
+  max-width: $page-width
+  padding-top: 160px
+  margin: 0 auto
+  @media screen and ( max-width: $page-width )
+    padding-top: calc( 60px + (160 - 60) * ((100vw - 320px) / (1440 - 320)))
